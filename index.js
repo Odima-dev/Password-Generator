@@ -11,9 +11,23 @@ function generatePasswords() {
     let passwordTwo = "";
 
     for (let i=0; i<15; i++) {
-        passwordOne += characters[Math.floor(Math.random() * characters.length) + 1]
-        passwordTwo += characters[Math.floor(Math.random() * characters.length) + 1]
+        passwordOne += characters[Math.floor(Math.random() * characters.length)]
+        passwordTwo += characters[Math.floor(Math.random() * characters.length)]
     }
     password1El.value = passwordOne;
     password2El.value = passwordTwo;
 }
+
+function copyToClipboard(event) {
+    let inputField = event.target;
+    inputField.select();
+    document.execCommand("copy")
+
+    //issue feedback
+    alert("Copied to Clipboard: " + inputField.value);
+}
+
+//Add event listeners for click-to-copy
+password1El.addEventListener("click", copyToClipboard);
+password2El.addEventListener("click", copyToClipboard);
+
