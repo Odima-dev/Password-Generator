@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     height: 100vh;
@@ -85,25 +79,4 @@ input {
     margin-right: 20px;
     text-align: center;
     margin-bottom: 10px;
-}
-
-
-/* Responsive Design for Mobile */
-@media (max-width: 600px) {
-    .teams-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .teams-container p {
-        font-size: 2rem;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .container {
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
 }
