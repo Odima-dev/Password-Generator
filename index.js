@@ -14,3 +14,4 @@ let passwordTwo = (Math.floor(Math.random() * characters.length) );
 //}
 
 console.log(characters[passwordOne]);
+console.log(characters[passwordTwo]);
